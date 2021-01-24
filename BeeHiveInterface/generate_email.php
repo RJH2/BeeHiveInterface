@@ -200,9 +200,9 @@ $mail->SMTPSecure = 'ssl';
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465;
 $mail->IsHTML(true);
-$mail->Username = "beehiveerpenbeck@gmail.com";
-$mail->Password = "BeeHive.60";
-$mail->SetFrom("beehiveerpenbeck@gmail.com");
+$mail->Username = "yourEmailAddress@email.com";
+$mail->Password = "yourPassword";
+$mail->SetFrom("yourEmailAddress@email.com");
 $mail->Subject = "Beehive" . date("D, M, Y h:i") . " - Average Temperatures";
 $mail->Body = $email_body;
 
@@ -210,11 +210,7 @@ for ($i = 0; $i < $TOTAL_IMAGES; $i++) {
 	$mail->addAttachment($image_locations[$i]);
 }
 
-$mail->AddAddress("TommyArnzen12@gmail.com");
-$mail->AddAddress("arnzen3@gmail.com");
-$mail->AddAddress("michael.erpenbeck@gmail.com");
-$mail->AddAddress("barberpenbeck1@gmail.com");
-$mail->AddAddress("toryerpenbeck@gmail.com");
+$mail->AddAddress("yourEmailAddress@gmail.com");
 
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
