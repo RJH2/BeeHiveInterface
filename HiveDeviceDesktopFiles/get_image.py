@@ -11,13 +11,13 @@ camera.resolution = (1000, 770)
 camera.annotate_text_size = 55
 camera.annotate_foreground = Color('black')
 camera.annotate_background = Color('White')
-camera.annotate_text = " Hive One " + dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + " "
+camera.annotate_text = " Hive X " + dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + " "
 time.sleep(5)
-camera.capture('/home/pi/Desktop/hive_one.jpg')
+camera.capture('/home/pi/Desktop/hive_x.jpg')
 
 
 url = 'http://your.server.device.ipAddress/BeeHiveInterface/add_image.php'
-path = '/home/pi/Desktop/hive_one.jpg'
+path = '/home/pi/Desktop/hive_x.jpg'
 with open(path, 'rb') as img:
   name_img= os.path.basename(path)
   files= {'file': ('hive_one.jpg',img,'multipart/form-data',{'Expires': '0'}) }

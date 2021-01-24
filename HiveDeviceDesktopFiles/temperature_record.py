@@ -5,7 +5,7 @@ import requests
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
 
-hive_id = 1
+hive_id = ENTER_HIVE_ID
 
 base_dir = '/sys/bus/w1/devices/'
 sensor_value = '28-01191be67995'
