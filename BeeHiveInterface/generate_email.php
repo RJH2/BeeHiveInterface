@@ -210,7 +210,7 @@ for ($i = 0; $i < $TOTAL_IMAGES; $i++) {
 	$mail->addAttachment($image_locations[$i]);
 }
 
-$mail->AddAddress("yourEmailAddress@gmail.com");
+$mail->AddAddress("yourEmailAddress@email.com");
 
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
