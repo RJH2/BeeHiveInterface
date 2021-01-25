@@ -16,9 +16,6 @@
 				
 		
 		record_temperature($hive_id, $temperature_value, $date_value);
-		
 	}
-
-
 
 ?>

@@ -11,7 +11,6 @@
 		for ($y = 0; $y < 24; $y++) {
 			for ($o = 0; $o < 6; $o++) {
 				
-				// echo ($o + 1) . " - " . ($y + 1) . " - " . ($i + 1 ) . "<br>";
 				$date = date("Y-m-d");
 				$date_calculation = date("Y-m-d H:i:s", strtotime('-' . (24 - $y) . ' hour'));
 				$date_time = new DateTime($date_calculation);

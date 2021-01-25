@@ -187,8 +187,6 @@ $email_body = "<!DOCTYPE html>
 $email_body .=  "</body>";
 $email_body .=  "</html>";
 
-// Display the email in text format.
-// echo htmlspecialchars($email_body) . "<br>";
 
 try {
 $mail = new PHPMailer();
