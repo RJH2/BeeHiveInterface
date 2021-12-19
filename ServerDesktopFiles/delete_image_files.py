@@ -10,7 +10,7 @@ if value == 'hourly':
     if os.path.exists("/var/www/html/BeeHiveInterface/images/hive_two.jpg"):
 	os.remove("/var/www/html/BeeHiveInterface/images/hive_two.jpg")
         
-    if os.path.exists("/var/www/html/BeeHiveInterface/images/hivw_three.jpg"):
+    if os.path.exists("/var/www/html/BeeHiveInterface/images/hive_three.jpg"): #I made an edit here typo "hivw" to "hive"
 	os.remove("/var/www/html/BeeHiveInterface/images/hive_three.jpg")
         
     if os.path.exists("/var/www/html/BeeHiveInterface/images/hive_four.jpg"):
